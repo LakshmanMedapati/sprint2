@@ -1,0 +1,86 @@
+/*navbaar*/
+.footer {
+    background-color: lightgray;
+}
+.navbar{
+    background-color: blue;
+}
+ul{
+    padding-right: 10px;
+}
+.navbar-brand{
+    padding-left: 20px;
+    display: flex;
+}
+.nav-item{
+    font-size: larger;
+}
+
+/*index*/
+#style {
+    padding: 35px 25px;
+}
+
+.jumbotron {
+    background-color: aqua;
+    
+}
+
+
+/*aboutus*/
+section {
+    padding: 10px 18px;
+    margin: auto;
+}
+.row{
+    margin-bottom: 20px;
+}
+#rel {
+    height: 200px;
+    width: 350px;
+    padding-bottom: 250px;
+    margin: auto;
+}
+
+
+/*products*/
+.card {
+    margin: 12px;
+    width: calc(100%/5);
+}
+
+.cards-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.card img {
+    max-width: 100%;
+    max-height: 230px;
+}
+.sect{
+    border: 4px lightblue solid;
+}
+
+.text-center{
+    padding-top: 20px;
+}
+
+
+/*product form*/
+._form {
+    font-size: x-large;
+    width: 70%;
+    margin: auto;
+}
+
+.form-row {
+    margin: 20px auto;
+}
+.btn{
+    font-size: large;
+    padding: 12px 50px;
+}
+#bgimage{
+    background-color:lightblue;
+}
