@@ -3,13 +3,11 @@ class ItemsController {
     // Set up the items and currentId property in the contructor
     constructor(currentId = 0) {
         this.items = [];
-        //this.imgItem = [];
         this.currentId = currentId;
-        //this.loadItemsFromLocalStorage();
     }
 
     // Create the addItem method
-    addItem(name, category, price, description,imageUrl) {
+    addItem(name, category, price, description, imageUrl) {
         const item = {
             // Increment the currentId property
             id: this.currentId++,
@@ -17,24 +15,17 @@ class ItemsController {
             category: category,
             price: price,
             description: description,
-            imageUrl :imageUrl
+            imageUrl: imageUrl
 
         };
 
 
         // Push the item to the items property
         this.items.push(item);
-        
+
     }
-    /*addimgItem(imageUrl) {
-        const imageUrl=imageUrl;
-        this.imgItem.push(imageUrl);
-    }*/
-    
 
-
-
-    // Create the addItem method
+    //get items from local storage and push to items array
     loadItemsFromLocalStorage() {
         const storageItems = localStorage.getItem("items")
         if (storageItems) {
@@ -44,17 +35,6 @@ class ItemsController {
                 this.items.push(item);
             }
         }
-
-        /*const imageItems = localStorage.getItem("imgitem")
-        if (imageItems) {
-            const imageItems= JSON.parse(imageItems)
-
-            for (var i = 0, size = imageItems.length; i < size; i++) {
-                const imageItem = imageItems[i];
-            this.imgItem.push(imageItem);
-            }
-
-        }*/
     }
 }
 
